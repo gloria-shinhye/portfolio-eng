@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#f5f3ed" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%233e6440'/%3E%3Ctext x='16' y='21' font-family='Helvetica' font-size='13' font-weight='bold' text-anchor='middle' fill='white'%3EG%3C/text%3E%3C/svg%3E" />
+    <title>GLORIA'S PORTFOLIO — Shopping Basket</title>
+    <script type="module" crossorigin src="./assets/index-CAAmLQGT.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CGJUvlSq.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">G</span>
+          <span class="brand-name">GLORIA'S PORTFOLIO<br /><small id="brandSmall">SELECTED WORKS / 2023—2026</small></span>
+        </div>
+        <div class="header-right">
+          <div id="topMeta" class="topbar-meta">Gloria Wong · Marketer · Seoul</div>
+          <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language">EN</button>
+        </div>
+      </header>
+
+      <main class="stage">
+        <section class="canvas-wrap" id="canvasWrap">
+          <canvas id="scene" aria-label="可交互的三维购物篮作品集"></canvas>
+          <div class="canvas-note note-top">REAL 3D <span>/</span> AMMO.WASM <span>/</span> WORKER THREAD</div>
+          <div id="hintText" class="canvas-note note-bottom">拎起篮子 · 拖动拨动 · 轻点物件查看项目</div>
+          <button id="resetBtn" class="reset-btn" type="button">重新摆放 ↺</button>
+        </section>
+
+        <section class="intro">
+          <p id="ledeText" class="lede">
+            七个做过的小项目，像日常采购一样被随手丢进篮子里。<br />
+            拖一拖，晃一晃，挑一个你感兴趣的看看。
+          </p>
+          <div class="intro-foot">
+            <span class="status-dot"></span>
+            <span id="statusText">正在加载物理引擎…</span>
+          </div>
+        </section>
+
+        <ol id="projectList" class="project-list"></ol>
+      </main>
+
+      <aside id="detail" class="detail" aria-hidden="true">
+        <button id="closeDetail" class="close-btn" type="button" aria-label="关闭">×</button>
+        <p id="detailIndex" class="detail-index">PROJECT 01 / 07</p>
+        <h2 id="detailTitle"></h2>
+        <p id="detailCategory" class="detail-category"></p>
+        <div class="detail-rule"></div>
+        <p id="detailSummary" class="detail-summary"></p>
+        <p id="detailBody" class="detail-body"></p>
+        <div id="detailMetrics" class="detail-metrics"></div>
+        <div id="detailTags" class="detail-tags"></div>
+        <div class="detail-meta">
+          <span id="detailYear"></span><span id="detailRole"></span>
+        </div>
+      </aside>
+
+      <div id="loader" class="loader">
+        <div class="loader-basket">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <p id="loaderText">正在把作品放进篮子…</p>
+      </div>
+    </div>
+  </body>
+</html>
